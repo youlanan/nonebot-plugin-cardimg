@@ -95,7 +95,7 @@ nonebot-plugin-cardimg 是一个基于 nonebot_plugin_htmlkit 的模板化图片
 在 nonebot2 项目的根目录下打开命令行, 输入以下指令即可安装
 
 ```bash
-nb plugin install nonebot_plugin_cardimg
+nb plugin install nonebot-plugin-cardimg
 ```
 
 </details>
@@ -109,7 +109,7 @@ nb plugin install nonebot_plugin_cardimg
 <summary>pip</summary>
 
 ```bash
-pip install nonebot_plugin_cardimg
+pip install nonebot-plugin-cardimg
 ```
 
 </details>
@@ -118,7 +118,7 @@ pip install nonebot_plugin_cardimg
 <summary>pdm</summary>
 
 ```bash
-pdm add nonebot_plugin_cardimg
+pdm add nonebot-plugin-cardimg
 ```
 
 </details>
@@ -127,7 +127,7 @@ pdm add nonebot_plugin_cardimg
 <summary>poetry</summary>
 
 ```bash
-poetry add nonebot_plugin_cardimg
+poetry add nonebot-plugin-cardimg
 ```
 
 </details>
@@ -136,7 +136,7 @@ poetry add nonebot_plugin_cardimg
 <summary>conda</summary>
 
 ```bash
-conda install nonebot_plugin_cardimg
+conda install nonebot-plugin-cardimg
 ```
 
 </details>
