@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "Noto Sans CJK SC", "PingFang SC", "WenQuanYi Micro Hei", sans-serif;
+            overflow: hidden;
+            background-color: #9b0000;
+            color: #FFF;
+            padding: 10px 10px;
+            position: relative;
+        }
+
+        .container-bottom {
+            border: 3px solid #FFF;
+            position: absolute;
+            top: 64px;
+            right: 64px;
+            bottom: 96px;
+            left: 96px;
+        }
+
+        .container {
+            border: 3px solid #FFF;
+            background-color: #9b0000;
+            position: relative;
+            padding: 40px;
+            z-index: 1;
+            margin: 80px 80px 60px 60px;
+        }
+
+        /* 底部尖椒*/
+        .speech-bubble-tail {
+            position: absolute;
+            left: -3px;
+            bottom: -40px;
+            border-right: 40px solid transparent;
+            border-top: 40px solid #FFF;
+        }
+
+        /* 尖角内部填充 */
+        .speech-bubble-tail-inner {
+            position: absolute;
+            left: 0px;
+            bottom: -32px;
+            border-right: 37px solid transparent;
+            border-top: 37px solid #9b0000;
+            z-index: 2;
+        }
+
+        .content {
+            font-size: 32px;
+            font-weight: bold;
+            white-space: pre-wrap;
+            /* text-indent: 2em; */
+            line-height: 1.5;
+            padding-bottom: 40px;
+        }
+
+        .footer {
+            font-size: 24px;
+            margin-left: 20px;
+			margin-top: 30px;
+            line-height: 1.4;
+            font-weight: normal;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-bottom"></div>
+    <div class="container">
+        <div class="speech-bubble-tail"></div>
+        <div class="speech-bubble-tail-inner"></div>
+        <div class="content">{{ content }}</div>
+        <div class="footer">{{ footer }}</div>
+    </div>
+</body>
+</html>

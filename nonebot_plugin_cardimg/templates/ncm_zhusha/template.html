@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei Bold", "微软雅黑 Bold", "Microsoft YaHei", "微软雅黑", "Noto Sans CJK SC", "PingFang SC", "WenQuanYi Micro Hei", sans-serif;
+            background-color: #D53932;
+            padding: 45px;
+        }
+
+        .title-box {
+            display: inline-block;
+            background-color: #FFFFFF;
+            padding: 10px 10px;
+            margin-bottom: 45px;
+        }
+
+        .title {
+            color: #D53932;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        .content {
+            color: #FFFFFF;
+            font-size: 30px;
+            font-weight: bold;
+            white-space: pre-wrap;
+            line-height: 1.5;
+        }
+
+        .footer {
+            color: #FFFFFF;
+            font-size: 18px;
+            text-align: right;
+            margin-top: 30px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    {% if title %}
+    <div class="title-box">
+        <div class="title">{{ title }}</div>
+    </div>
+    {% endif %}
+    <div class="content">{{ content }}</div>
+    {% if footer %}<div class="footer">{{ footer }}</div>{% endif %}
+</body>
+</html>

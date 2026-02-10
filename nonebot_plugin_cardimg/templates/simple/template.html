@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Noto Sans CJK SC", "Noto Sans CJK", "PingFang SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+            color: {{ text_color }};
+            font-size: 16px;
+            line-height: 1.6;
+            background-color: {{ bg_color }};
+            padding: 50px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            font-size: 16px;
+            white-space: pre-wrap;
+        }
+
+        .footer {
+            font-size: 14px;
+            text-align: right;
+            margin-top: 20px;
+            color: {{ footer_color }};
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    {% if title %}<div class="title">{{ title }}</div>{% endif %}
+    <div class="content">{{ content }}</div>
+    {% if footer %}<div class="footer">{{ footer }}</div>{% endif %}
+</body>
+</html>

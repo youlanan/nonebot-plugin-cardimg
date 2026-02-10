@@ -1,0 +1,27 @@
+[project]
+name = "nonebot_plugin_cardimg"
+version = "0.1.0"
+description = "文本转图片工具，基于nonebot_plugin_htmlkit预制了方便扩展的渲染模板"
+authors = [
+    {name = "youlanan", email = "ylanan@foxmail.com"},
+]
+dependencies = [
+    "nonebot2>=2.4.3",
+    "nonebot-plugin-htmlkit>=0.1.0",
+    "pydantic>=2.0.0",
+]
+requires-python = ">=3.10,<4.0"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.urls]
+homepage = "https://github.com/youlanan/nonebot-plugin-cardimg"
+Repository = "https://github.com/youlanan/nonebot_plugin_cardimg.git"
+Documentation = "https://github.com/youlanan/nonebot_plugin_cardimg#readme"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.nonebot]
+plugins = []

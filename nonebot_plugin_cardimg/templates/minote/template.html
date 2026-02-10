@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "微软雅黑", "Noto Sans CJK SC", "Noto Sans CJK", "PingFang SC", "WenQuanYi Micro Hei", sans-serif;
+            line-height: 1.6;
+        }
+
+        .page {
+            background-image: url('{{ bg_image }}');
+            background-repeat: repeat;
+            padding: 32px;
+        }
+
+        .container {
+            position: relative;
+            border: 2.5px solid #E4DACF;
+            padding: 40px;
+            overflow-wrap: break-word;
+            word-break: break-word;
+        }
+
+        .corner {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            z-index: 2;
+            pointer-events: none;
+            display: block;
+            image-rendering: crisp-edges;
+        }
+
+        .corner-top-left {
+            top: -2px;
+            left: -2px;
+        }
+
+        .corner-top-right {
+            top: -2px;
+            right: -2px;
+        }
+
+        .corner-bottom-right {
+            bottom: -2px;
+            right: -2px;
+        }
+
+        .corner-bottom-left {
+            bottom: -2px;
+            left: -2px;
+        }
+
+        .title {
+            color: #6E5749;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            color: #7C695B;
+            font-size: 26px;
+            white-space: pre-wrap;
+            text-align: left;
+        }
+
+        .footer {
+            color: #9E9488;
+            font-size: 20px;
+            text-align: right;
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <img class="corner corner-top-left" src="{{ banner_01 }}" alt="">
+            <img class="corner corner-top-right" src="{{ banner_02 }}" alt="">
+            <img class="corner corner-bottom-right" src="{{ banner_03 }}" alt="">
+            <img class="corner corner-bottom-left" src="{{ banner_04 }}" alt="">
+            {% if title %}<div class="title">{{ title }}</div>{% endif %}
+            <div class="content">{{ content }}</div>
+            {% if footer %}<div class="footer">{{ footer }}</div>{% endif %}
+        </div>
+    </div>
+</body>
+</html>
