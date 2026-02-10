@@ -17,7 +17,7 @@ from .templates import (
     TableTemplate,
 )
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __plugin_meta__ = PluginMetadata(
     name="nonebot-plugin-cardimg",
     description="基于 nonebot_plugin_htmlkit 渲染的文本转图片模板插件",

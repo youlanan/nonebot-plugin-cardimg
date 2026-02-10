@@ -1,6 +1,6 @@
 [project]
 name = "nonebot_plugin_cardimg"
-version = "0.1.0"
+version = "0.1.1"
 description = "文本转图片工具，基于 nonebot_plugin_htmlkit 预制了方便扩展的渲染模板"
 authors = [
     {name = "youlanan", email = "ylanan@foxmail.com"},
