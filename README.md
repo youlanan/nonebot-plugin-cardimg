@@ -324,6 +324,11 @@ class MyTemplate(BaseTemplate):
 
 ## 📝 更新日志
 
+### v0.1.2 (2026-02-10)
+
+- 修复 nonebot-plugin-htmlkit 依赖版本号错误问题
+- 更新项目描述
+
 ### v0.1.1 (2026-02-10)
 
 - 初始版本发布（仅在 Docker 环境下测试通过，暂未解决默认字体替换问题）

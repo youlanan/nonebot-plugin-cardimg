@@ -1,13 +1,13 @@
 [project]
 name = "nonebot_plugin_cardimg"
-version = "0.1.1"
+version = "0.1.2"
 description = "文本转图片工具，基于 nonebot_plugin_htmlkit 预制了方便扩展的渲染模板"
 authors = [
     {name = "youlanan", email = "ylanan@foxmail.com"},
 ]
 dependencies = [
     "nonebot2>=2.4.3",
-    "nonebot-plugin-htmlkit>=0.1.0",
+    "nonebot-plugin-htmlkit>=0.1.0rc4",
     "pydantic>=2.0.0",
 ]
 requires-python = ">=3.10,<4.0"
