@@ -34,7 +34,7 @@ _✨ 基于 nonebot_plugin_htmlkit 渲染的文本转图片模板插件 ✨_
 
 ## 📖 介绍
 
-nonebot-plugin-cardimg 是一个基于 nonebot_plugin_htmlkit 的模板化图片渲染插件，为 NoneBot2 插件开发者提供简单易用的图片生成功能。
+nonebot-plugin-cardimg 是一个基于 nonebot_plugin_htmlkit 的模板化图片渲染插件，为 NoneBot2 插件开发者提供简单易用的文本图片生成功能。
 
 ### 核心特性
 
@@ -168,6 +168,8 @@ plugins = [
 ### 基础用法
 
 ```python
+from nonebot import require
+require("nonebot_plugin_cardimg")
 from nonebot_plugin_cardimg import render
 
 # 渲染小米便签模板
@@ -269,6 +271,7 @@ print(templates)  # ['minote', 'simple', 'ncm_zhusha', 'ncm_card', 'bili', 'help
 - `footer` (str, optional): 页脚
 - `htmlkit_params` (dict, optional): htmlkit 渲染参数
 - `**kwargs`: 模板特定参数
+###### 其中：`template` 是必填项，其他参数根据不同模板需求填写；`htmlkit_params` 是 htmlkit 插件的渲染方法参数，可用来自定义调整渲染尺寸、格式等内容。
 
 **返回：**
 - `bytes`: 图片字节数据
