@@ -20,7 +20,7 @@ from .templates import (
 __version__ = "0.1.0"
 __plugin_meta__ = PluginMetadata(
     name="nonebot-plugin-cardimg",
-    description="基于nonebot_plugin_htmlkit的模板化图片渲染插件",
+    description="基于 nonebot_plugin_htmlkit 渲染的文本转图片模板插件",
     usage=(
         "提供预定义的HTML模板，简化图片渲染\n"
         "示例: img_bytes = await render('minote', title='标题', content='内容')\n"

@@ -12,7 +12,7 @@
 
 # nonebot-plugin-cardimg
 
-_✨ 基于nonebot_plugin_htmlkit的模板化图片渲染插件 ✨_
+_✨ 基于 nonebot_plugin_htmlkit 渲染的文本转图片模板插件 ✨_
 
 <img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="python">
 <a href="https://github.com/astral-sh/uv">
@@ -304,7 +304,7 @@ class MyTemplate(BaseTemplate):
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/youlanan/nonebot-plugin-cardimg/main/docs/qrcode.png" width="200" alt="QQ群二维码">
+<img src="https://raw.githubusercontent.com/youlanan/nonebot-plugin-cardimg/main/docs/qrcode.png" width="200" alt="QQ群">
 
 </div>
 
