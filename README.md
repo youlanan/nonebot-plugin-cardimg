@@ -324,6 +324,10 @@ class MyTemplate(BaseTemplate):
 
 ## 📝 更新日志
 
+### v0.1.3 (2026-02-18)
+
+- 移除 pydantic 版本限制，兼容 pydantic v1 和 v2
+
 ### v0.1.2 (2026-02-10)
 
 - 修复 nonebot-plugin-htmlkit 依赖版本号错误问题
